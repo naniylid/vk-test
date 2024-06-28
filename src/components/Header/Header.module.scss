@@ -1,0 +1,23 @@
+.header {
+  background: #ff7c00;
+  min-height: 480px;
+
+  &__item {
+    position: absolute;
+    margin-top: 36px;
+    padding: 12px 24px 16px 24px;
+    border-radius: 0 24px 0 0;
+    width: 155px;
+    height: 52px;
+    background-color: #2e2f33;
+  }
+
+  &__title {
+    position: absolute;
+    margin: 331px 0 48px 48px;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 140%;
+    color: #2e2f33;
+  }
+}

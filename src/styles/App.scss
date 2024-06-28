@@ -1,0 +1,53 @@
+@import './fonts.scss';
+@import '../components/Header/Header.module.scss';
+@import '../components/Button/Button.module.scss';
+@import '../components/Counter/Counter.module.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  overflow-x: hidden;
+}
+
+.controls {
+  background: #f7f4f2;
+  border: 1px solid rgba(50, 23, 0, 0.08);
+  border-radius: 16px;
+  padding: 48px;
+  margin: 50px auto;
+
+  max-width: 960px;
+  min-height: 537px;
+  display: flex;
+  justify-content: space-between;
+
+  h3 {
+    margin-bottom: 30px;
+  }
+
+  label {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 400px;
+  }
+
+  select {
+    margin-left: 20px;
+    background-color: transparent;
+    border-radius: 5px;
+    width: 150px;
+    cursor: pointer;
+    border: 1px solid #f70;
+  }
+
+  &__button {
+    position: absolute;
+    margin-top: 300px;
+  }
+}
