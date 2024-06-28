@@ -33,26 +33,50 @@ $green: #2fb675;
   background-color: $green;
 
   &.one {
+    -webkit-animation: red-dot-scale-fade 2s infinite;
     animation: red-dot-scale-fade 2s infinite;
   }
 
   &.two {
+    -webkit-animation: red-dot-scale-fade 2s infinite 0.25s;
     animation: red-dot-scale-fade 2s infinite 0.25s;
+  }
+}
+
+@-webkit-keyframes red-dot-scale-fade {
+  0% {
+    opacity: 0.5;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+    transform: scale(3);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+    transform: scale(3);
   }
 }
 
 @keyframes red-dot-scale-fade {
   0% {
     opacity: 0.5;
+    -webkit-transform: scale(1);
     transform: scale(1);
   }
   50% {
     opacity: 0;
+    -webkit-transform: scale(3);
     transform: scale(3);
   }
 
   100% {
     opacity: 0;
+    -webkit-transform: scale(3);
     transform: scale(3);
   }
 }
